@@ -18,13 +18,13 @@ type CardProps = {
 const MainCard: React.FC = () => {
   const [status, setStatus] = useState<"front" | "back" | "reset">("front");
 
-  const modules = import.meta.glob("/src/loteria/individualCards/*png");
+  const modules = import.meta.glob("/public/loteria/individualCards/*png");
   const individualCards: string[] = [];
   for (const path in modules) {
     individualCards.push(path);
   }
 
-  const mod2 = import.meta.glob("/src/loteria/*jpg");
+  const mod2 = import.meta.glob("/public/loteria/*jpg");
   const LoteriaCards: string[] = [];
   for (const path in mod2) {
     LoteriaCards.push(path);
@@ -75,7 +75,7 @@ const MainCard: React.FC = () => {
             <div
               className="flex flex-col items-center justify-center h-full p-4 text-center"
               style={{
-                backgroundImage: `url(/src/loteria/madre.png)`,
+                backgroundImage: `url(/public/loteria/madre.png)`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
