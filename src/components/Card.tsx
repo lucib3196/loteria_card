@@ -18,17 +18,25 @@ type CardProps = {
 const MainCard: React.FC = () => {
   const [status, setStatus] = useState<"front" | "back" | "reset">("front");
 
-  const modules = import.meta.glob("/src/assets/loteria/individualCards/*png");
-  const individualCards: string[] = [];
-  for (const path in modules) {
-    individualCards.push(path);
-  }
+  // const modules = import.meta.glob("/src/assets/loteria/individualCards/*png");
+  // const individualCards: string[] = [];
+  // for (const path in modules) {
+  //   individualCards.push(path);
+  // }
 
-  const mod2 = import.meta.glob("/loteria/individualCards/*jpg");
-  const LoteriaCards: string[] = [];
-  for (const path in mod2) {
-    LoteriaCards.push(path);
-  }
+  // const mod2 = import.meta.glob("/loteria/individualCards/*jpg");
+  // const LoteriaCards: string[] = [];
+  // for (const path in mod2) {
+  //   LoteriaCards.push(path);
+  // }
+
+  const individualCards = [
+    "/loteria/individualCards/card1.png",
+    "/loteria/individualCards/card2.png",
+    "/loteria/individualCards/card3.png",
+    "/loteria/individualCards/card5.png",
+
+  ]
 
   const CardStack = (num: number) => {
     return (
@@ -75,7 +83,7 @@ const MainCard: React.FC = () => {
             <div
               className="flex flex-col items-center justify-center h-full p-4 text-center"
               style={{
-                backgroundImage: `url(/src/assets/loteria/madre.png)`,
+                backgroundImage: `url(/loteria/madre.png)`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
