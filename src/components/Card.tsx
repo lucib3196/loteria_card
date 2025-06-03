@@ -24,7 +24,7 @@ const MainCard: React.FC = () => {
     individualCards.push(path);
   }
 
-  const mod2 = import.meta.glob("/public/loteria/*jpg");
+  const mod2 = import.meta.glob("/loteria/individualCards/*jpg");
   const LoteriaCards: string[] = [];
   for (const path in mod2) {
     LoteriaCards.push(path);
@@ -75,7 +75,7 @@ const MainCard: React.FC = () => {
             <div
               className="flex flex-col items-center justify-center h-full p-4 text-center"
               style={{
-                backgroundImage: `url(/public/loteria/madre.png)`,
+                backgroundImage: `url(/loteria/madre.png)`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
