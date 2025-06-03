@@ -1,5 +1,5 @@
-import { createContext, useContext, ReactNode, useState } from "react";
-
+import { createContext, useContext,useState } from "react";
+import type { ReactNode } from "react";
 type AppState = "play" | "reset";
 
 const AppContext = createContext<{
