@@ -35,7 +35,6 @@ const MainCard: React.FC = () => {
     "/loteria/individualCards/card2.png",
     "/loteria/individualCards/card3.png",
     "/loteria/individualCards/card5.png",
-
   ]
 
   const CardStack = (num: number) => {
@@ -90,25 +89,30 @@ const MainCard: React.FC = () => {
               }}
             ></div>
           ) : (
-            <div className="flex flex-col items-center justify-evenly h-full p-4 text-center rotate-y-180">
-              <div className="flex flex-col justify-start  border-2 border-r rounded-2xl w-full h-full py-3 gap-y-20  ">
-                <div>
-                  <h1 className="text-2xl items-start  font-semibold">
-                    Journey Details
-                  </h1>
-                  <p className="mt-2 text-sm text-gray-600">
+            <div className="flex flex-col items-center h-full p-4 text-center rotate-y-180 font-thin ">
+              <div className="flex flex-col justify-start border-2 border-r rounded-2xl w-full h-full py-3 gap-y-5">
+                <div className="font-modack">
+                  <p className="mt-2 text-2xl text-yellow-600">
                     She defines excelencia with
                   </p>
                 </div>
-                <div>
-                  <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
+                <div className=" text-sm md:text-base font-roboto text-black">
+                  <ul className="list-disc list-inside space-y-4 text-left px-4">
+                    <li>
+                      <span className="text-red-500 font-semibold">Unwavering familismo:</span> motivating me to persist and seek help. She taught me that leaning on family during challenges in STEM isn’t a weakness but a source of strength and resilience.
+                    </li>
+                    <li>
+                      <span className="text-red-500 font-semibold">Cultural wealth:</span> modeling hard work, routine, and perseverance. By maintaining a structured daily routine—juggling work, caregiving, and household tasks—she showed me the value of discipline and purpose in everything I do.
+                    </li>
+                    <li>
+                      <span className="text-red-500 font-semibold">Resistance and agency:</span> demonstrating integrity, dedication, and resilience against barriers. Her example of overcoming early obstacles—waking up before dawn to work while still prioritizing family—reflects a powerful stance against systemic challenges.
+                    </li>
                   </ul>
+
                 </div>
               </div>
             </div>
+
           )}
         </motion.div>
       </div>

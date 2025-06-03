@@ -8,7 +8,7 @@ const ButtonContainer: React.FC = () => {
   return (
     <div className="flex flex-row justify-evenly w-full items-center  my-5">
       <button
-        className="border border-black rounded-2xl px-5 py-3 font-bold  bg-green-400 hover:bg-green-600"
+        className="border border-black font-light text-2xl rounded-2xl  px-5 py-5  md:px-15 md:py-8   bg-green-400 hover:bg-green-600"
         onClick={() => {
           toggleState("play");
         }}
@@ -16,7 +16,7 @@ const ButtonContainer: React.FC = () => {
         Play
       </button>
       <button
-        className="border border-black rounded-2xl px-5 py-3 font-bold bg-red-400  hover:bg-red-600 "
+        className="border border-black  font-light  text-2xl px-5 py-5 rounded-2xl md:px-15 md:py-8   bg-red-400  hover:bg-red-600 "
         onClick={() => {
           toggleState("reset");
           window.location.reload();
@@ -31,13 +31,13 @@ const ButtonContainer: React.FC = () => {
 function App() {
   return (
     <AppProvider>
-      <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-yellow-50 via-white to-pink-100 text-gray-800 px-6 py-8">
+      <section className="text-futura min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-b from-blue-500 via-blue-200 to-red-200 text-gray-800  font-modack">
         {/* Header of App */}
         <header className="self-start flex flex-col justify-center items-center w-full">
-          <h1 className="text-6xl font-extrabold tracking-wide text-pink-600 drop-shadow-md">
+          <h1 className="text-6xl mt-10 mx-4 text-center md:text-9xl tracking-wide text-yellow-500 drop-shadow-md">
             Mi Lotería: <span className="text-yellow-600"></span>
           </h1>
-          <p className="mt-2 text-sm text-gray-600">
+          <p className="text-3xl md:text-6xl mt-2 mx-4  font-light text-red-700 text-center">
             A tribute to strength, resilience, and excellence.
           </p>
         </header>
