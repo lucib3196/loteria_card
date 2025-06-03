@@ -34,7 +34,7 @@ function App() {
       <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-yellow-50 via-white to-pink-100 text-gray-800 px-6 py-8">
         {/* Header of App */}
         <header className="self-start flex flex-col justify-center items-center w-full">
-          <h1 className="text-4xl font-extrabold tracking-wide text-pink-600 drop-shadow-md">
+          <h1 className="text-6xl font-extrabold tracking-wide text-pink-600 drop-shadow-md">
             Mi Lotería: <span className="text-yellow-600"></span>
           </h1>
           <p className="mt-2 text-sm text-gray-600">
